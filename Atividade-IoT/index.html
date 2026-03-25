@@ -3,113 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <title>Atividade IoT</title>
+
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
-            line-height: 1.6;
+            background: #f5f5f5;
         }
-        h1, h2 {
-            color: #4B0082;
-        }
-        h1 {
+
+        header {
+            background: linear-gradient(90deg, #6a0dad, #9b59b6);
+            color: white;
+            padding: 20px;
             text-align: center;
         }
+
+        nav {
+            background: #333;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #9b59b6;
+        }
+
         section {
-            margin-bottom: 30px;
+            background: white;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #6a0dad;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 20px;
+            background: #6a0dad;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #4b0082;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #333;
+            color: white;
+            margin-top: 20px;
         }
     </style>
 </head>
+
 <body>
 
-<h1>Atividade de IoT</h1>
+<header>
+    <h1>Atividade de IoT</h1>
+    <p>Internet das Coisas e Tecnologias Inteligentes</p>
+</header>
 
-<section>
+<nav>
+    <a href="#q1">IoT</a>
+    <a href="#q2">Exemplos</a>
+    <a href="#q3">IoS</a>
+    <a href="#q4">Cidades Inteligentes</a>
+</nav>
+
+<section id="q1">
     <h2>1. O que é IoT, como funciona e onde pode ser aplicado?</h2>
 
-    <p>A <strong>Internet das Coisas (IoT)</strong> refere-se a uma rede de objetos físicos incorporados com sensores, software e outras tecnologias que permitem a conexão e a troca de dados com outros dispositivos e sistemas pela internet. O objetivo principal da IoT é estender a conectividade da internet para além dos dispositivos padrão, como computadores e smartphones, para uma gama de objetos cotidianos, tornando-os inteligentes e capazes de coletar e transmitir dados.</p>
+    <p><strong>Internet das Coisas (IoT)</strong> refere-se a uma rede de objetos físicos com sensores e conexão à internet, capazes de coletar e trocar dados.</p>
 
-    <h3>Como funciona a IoT?</h3>
+    <h3>Como funciona:</h3>
     <ul>
-        <li><strong>Dispositivos/Sensores:</strong> coletam dados como temperatura, umidade e movimento.</li>
-        <li><strong>Conectividade:</strong> envio de dados via Wi-Fi, Bluetooth, 4G, 5G, etc.</li>
-        <li><strong>Processamento de Dados:</strong> análise dos dados na nuvem ou servidor.</li>
-        <li><strong>Interface/Ações:</strong> apresentação dos dados ao usuário ou ações automáticas.</li>
+        <li>Sensores coletam dados</li>
+        <li>Dados são enviados pela internet</li>
+        <li>Processamento na nuvem</li>
+        <li>Ações automáticas ou exibição ao usuário</li>
     </ul>
 
-    <h3>Onde pode ser aplicada?</h3>
+    <h3>Aplicações:</h3>
     <ul>
         <li>Casas inteligentes</li>
         <li>Saúde</li>
         <li>Indústria</li>
-        <li>Cidades inteligentes</li>
         <li>Agricultura</li>
-        <li>Varejo</li>
         <li>Transporte</li>
     </ul>
 </section>
 
-<section>
-    <h2>2. Exemplos de aplicações práticas de IoT e seus benefícios</h2>
+<section id="q2">
+    <h2>2. Exemplos de aplicações práticas</h2>
 
-    <h3>Exemplo 1: Casas Inteligentes</h3>
-    <p><strong>Aplicação:</strong> Controle de iluminação, temperatura, segurança e eletrodomésticos via smartphone.</p>
-    <p><strong>Benefícios:</strong> Economia de energia, mais conforto e segurança.</p>
+    <h3>Casas Inteligentes</h3>
+    <p>Controle de iluminação, temperatura e segurança via celular.</p>
 
-    <h3>Exemplo 2: Saúde Conectada</h3>
-    <p><strong>Aplicação:</strong> Wearables que monitoram batimentos, sono e atividades.</p>
-    <p><strong>Benefícios:</strong> Prevenção de doenças e melhor qualidade de vida.</p>
+    <h3>Saúde</h3>
+    <p>Relógios inteligentes monitoram batimentos e atividades.</p>
 
-    <h3>Exemplo 3: Indústria (Manutenção Preditiva)</h3>
-    <p><strong>Aplicação:</strong> Sensores que monitoram máquinas para prever falhas.</p>
-    <p><strong>Benefícios:</strong> Redução de custos e aumento da eficiência.</p>
+    <h3>Indústria</h3>
+    <p>Sensores evitam falhas em máquinas (manutenção preditiva).</p>
 </section>
 
-<section>
-    <h2>3. Internet of Skills (IoS): Utopia ou Realidade?</h2>
+<section id="q3">
+    <h2>3. Internet of Skills (IoS)</h2>
 
-    <p>A <strong>Internet of Skills</strong> permite transmitir habilidades humanas remotamente usando tecnologia.</p>
+    <p>Permite transmissão de habilidades à distância usando tecnologia.</p>
 
-    <h3>É utópico?</h3>
-    <p>Não totalmente. A ideia completa ainda é avançada, mas já existem tecnologias em desenvolvimento.</p>
-
-    <h3>Aplicações práticas</h3>
     <ul>
         <li>Telecirurgia</li>
-        <li>Treinamento remoto com realidade aumentada</li>
-        <li>Educação imersiva com realidade virtual</li>
+        <li>Treinamento remoto</li>
+        <li>Educação com realidade virtual</li>
     </ul>
 
-    <h3>Adoção no mercado</h3>
-    <p>Sim, principalmente em áreas como saúde, indústria e educação, impulsionadas pelo 5G.</p>
-
-    <h3>Momento atual</h3>
-    <p>Pesquisas focadas em latência baixa, tecnologias hápticas e realidade virtual.</p>
+    <p><strong>Conclusão:</strong> Já é realidade parcial e tende a crescer com 5G.</p>
 </section>
 
-<section>
-    <h2>4. O que são cidades inteligentes e como funcionam?</h2>
+<section id="q4">
+    <h2>4. Cidades Inteligentes</h2>
 
-    <p><strong>Cidades inteligentes</strong> utilizam tecnologia e IoT para melhorar a qualidade de vida, eficiência e sustentabilidade.</p>
+    <p>Cidades que usam tecnologia para melhorar serviços e qualidade de vida.</p>
 
-    <h3>Como funcionam?</h3>
-    <ul>
-        <li>Monitoramento de recursos</li>
-        <li>Gestão de trânsito</li>
-        <li>Segurança pública</li>
-        <li>Monitoramento ambiental</li>
-        <li>Serviços digitais</li>
-    </ul>
+    <h3>Exemplo:</h3>
+    <p><strong>Barcelona</strong> – sensores, iluminação inteligente e transporte otimizado.</p>
 
-    <h3>Exemplo: Barcelona</h3>
-    <p>Uso de sensores em lixeiras, iluminação inteligente e transporte otimizado.</p>
+    <h3>No Brasil:</h3>
+    <p><strong>Curitiba</strong> – destaque em transporte e inovação urbana.</p>
 
-    <h3>No Brasil</h3>
-    <p>Curitiba é destaque com transporte eficiente e projetos de inovação urbana.</p>
+    <br>
+    <a href="#top" class="btn">Voltar ao topo</a>
 </section>
 
 <footer>
-    <p>Baseado na atividade proposta em aula :contentReference[oaicite:0]{index=0}</p>
+    <p>Atividade baseada em IoT :contentReference[oaicite:0]{index=0}</p>
 </footer>
 
 </body>
