@@ -14,6 +14,7 @@
         body {
             font-family: Arial, sans-serif;
             background: #f5f5f5;
+            scroll-behavior: smooth;
         }
 
         header {
@@ -45,10 +46,15 @@
 
         section {
             background: white;
-            margin: 20px;
+            margin: 20px auto;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 900px;
+        }
+
+        h1 {
+            margin-bottom: 10px;
         }
 
         h2 {
@@ -56,8 +62,18 @@
             margin-bottom: 10px;
         }
 
+        h3 {
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
         ul {
             margin-left: 20px;
+            margin-bottom: 10px;
         }
 
         .btn {
@@ -68,6 +84,7 @@
             text-decoration: none;
             border-radius: 8px;
             transition: 0.3s;
+            margin-top: 10px;
         }
 
         .btn:hover {
@@ -81,10 +98,22 @@
             color: white;
             margin-top: 20px;
         }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            section {
+                margin: 10px;
+                padding: 15px;
+            }
+        }
     </style>
 </head>
 
-<body>
+<body id="top">
 
 <header>
     <h1>Atividade de IoT</h1>
@@ -159,12 +188,11 @@
     <h3>No Brasil:</h3>
     <p><strong>Curitiba</strong> – destaque em transporte e inovação urbana.</p>
 
-    <br>
     <a href="#top" class="btn">Voltar ao topo</a>
 </section>
 
 <footer>
-    <p>Atividade baseada em IoT :contentReference[oaicite:0]{index=0}</p>
+    <p>Atividade baseada em IoT</p>
 </footer>
 
 </body>
