@@ -2,17 +2,48 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Download PDF - IoT</title>
+    <title>Teste Card PDF</title>
 
-    <!-- CONECTANDO O CSS -->
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f5f5f5;
+            font-family: Arial;
+        }
+
+        .card-pdf {
+            background: white;
+            max-width: 400px;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .logo {
+            width: 120px;
+            margin-bottom: 15px;
+        }
+
+        .btn-download {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 20px;
+            background: purple;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 
 <body>
 
-<!-- CARD DE DOWNLOAD DO PDF -->
 <div class="card-pdf">
-    <img src="logo-unianchieta.png" alt="Logo UniAnchieta" class="logo">
+    <img src="logo-unianchieta.png" class="logo">
 
     <h3>Atividade de IoT</h3>
 
