@@ -39,6 +39,13 @@
     transition: 0.3s;
 }
 
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 .btn-download:hover {
     opacity: 0.85;
     transform: scale(1.05);
